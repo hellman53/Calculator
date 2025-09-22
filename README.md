@@ -6,6 +6,12 @@ A sophisticated, feature-rich web-based calculator built with modern HTML, CSS, 
 
 This is a fully functional calculator web application featuring a sleek modern design with a gradient background and sophisticated button styling. The calculator supports basic arithmetic operations, scientific functions, memory operations, and includes full keyboard support with a comprehensive history system.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://github.com/hellman53/Strong-Password-Generator/blob/6ddf5666525f5cb8345c6c773b15850a3740ca39/public/preview.png" alt="Preview" width="600"/>
+</p>
+
 ## ✨ Features
 
 ### Basic Operations
