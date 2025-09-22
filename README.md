@@ -6,6 +6,12 @@ A sophisticated, feature-rich web-based calculator built with modern HTML, CSS, 
 
 This is a fully functional calculator web application featuring a sleek modern design with a gradient background and sophisticated button styling. The calculator supports basic arithmetic operations, scientific functions, memory operations, and includes full keyboard support with a comprehensive history system.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://github.com/hellman53/Calculator/blob/da3f21a2cc71266a93eecf53530880ed970a5e65/calculator-preview.png" alt="Preview" width="600"/>
+</p>
+
 ## ✨ Features
 
 ### Basic Operations
