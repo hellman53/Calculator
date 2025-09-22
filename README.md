@@ -9,7 +9,7 @@ This is a fully functional calculator web application featuring a sleek modern d
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://github.com/hellman53/Strong-Password-Generator/blob/6ddf5666525f5cb8345c6c773b15850a3740ca39/public/preview.png" alt="Preview" width="600"/>
+  <img src="https://github.com/hellman53/Calculator/blob/da3f21a2cc71266a93eecf53530880ed970a5e65/calculator-preview.png" alt="Preview" width="600"/>
 </p>
 
 ## ✨ Features
