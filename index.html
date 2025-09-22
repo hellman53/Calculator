@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Modern Calculator - A sleek, feature-rich calculator with advanced functionality">
+    <meta name="author" content="Calculator Pro">
+    <title>Modern Calculator</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="calculator">
-        <input id="display" readonly>
-        <div id="keys">
-        <button onclick="appendToDisplay('+')" class="operator">+</button>
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('-')" class="operator">-</button>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('*')" class="operator">*</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('/')" class="operator">/</button>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="clearDisplay()" class="operator">C</button>
+    <div class="calculator-container">
+        <div id="calculator">
+            <div class="display-section">
+                <div id="history" class="history"></div>
+                <input id="display" readonly placeholder="0" aria-label="Calculator display">
+            </div>
+            
+            <div id="keys" class="keys-grid">
+                <!-- Memory and utility functions -->
+                <button onclick="memoryRecall()" class="memory" title="Memory Recall">MR</button>
+                <button onclick="memoryClear()" class="memory" title="Memory Clear">MC</button>
+                <button onclick="memoryAdd()" class="memory" title="Memory Add">M+</button>
+                <button onclick="memorySubtract()" class="memory" title="Memory Subtract">M-</button>
+                
+                <!-- Advanced functions -->
+                <button onclick="clearAll()" class="function" title="Clear All">AC</button>
+                <button onclick="clearEntry()" class="function" title="Clear Entry">CE</button>
+                <button onclick="backspace()" class="function" title="Backspace">⌫</button>
+                <button onclick="appendToDisplay('/')" class="operator" title="Divide">÷</button>
+                
+                <!-- Numbers and basic operations -->
+                <button onclick="appendToDisplay('7')" class="number">7</button>
+                <button onclick="appendToDisplay('8')" class="number">8</button>
+                <button onclick="appendToDisplay('9')" class="number">9</button>
+                <button onclick="appendToDisplay('*')" class="operator" title="Multiply">×</button>
+                
+                <button onclick="appendToDisplay('4')" class="number">4</button>
+                <button onclick="appendToDisplay('5')" class="number">5</button>
+                <button onclick="appendToDisplay('6')" class="number">6</button>
+                <button onclick="appendToDisplay('-')" class="operator" title="Subtract">−</button>
+                
+                <button onclick="appendToDisplay('1')" class="number">1</button>
+                <button onclick="appendToDisplay('2')" class="number">2</button>
+                <button onclick="appendToDisplay('3')" class="number">3</button>
+                <button onclick="appendToDisplay('+')" class="operator" title="Add">+</button>
+                
+                <!-- Bottom row -->
+                <button onclick="toggleSign()" class="function" title="Toggle Sign">±</button>
+                <button onclick="appendToDisplay('0')" class="number zero">0</button>
+                <button onclick="appendToDisplay('.')" class="function" title="Decimal Point">.</button>
+                <button onclick="calculate()" class="equals" title="Calculate">=</button>
+                
+                <!-- Scientific functions row -->
+                <button onclick="calculatePercentage()" class="scientific" title="Percentage">%</button>
+                <button onclick="calculateSquareRoot()" class="scientific" title="Square Root">√</button>
+                <button onclick="calculateSquare()" class="scientific" title="Square">x²</button>
+                <button onclick="calculateReciprocal()" class="scientific" title="Reciprocal">1/x</button>
+            </div>
+            
+            <div class="status-bar">
+                <span id="memory-indicator" class="memory-indicator hidden">M</span>
+                <span class="calculator-title">Modern Calculator</span>
+            </div>
+        </div>
     </div>
-</div>
+    
     <script src="index.js"></script>
 </body>
 </html>

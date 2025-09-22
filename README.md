@@ -1,19 +1,34 @@
-# Calculator
+# Modern Calculator
 
-A simple, modern web-based calculator built with HTML, CSS, and JavaScript.
+A sophisticated, feature-rich web-based calculator built with modern HTML, CSS, and JavaScript. This calculator combines elegant design with powerful functionality, offering both basic arithmetic and advanced scientific operations.
 
 ## 🔍 Overview
 
-This is a fully functional calculator web application featuring a sleek dark theme with orange accent buttons for operators. The calculator supports basic arithmetic operations including addition, subtraction, multiplication, and division.
+This is a fully functional calculator web application featuring a sleek modern design with a gradient background and sophisticated button styling. The calculator supports basic arithmetic operations, scientific functions, memory operations, and includes full keyboard support with a comprehensive history system.
 
 ## ✨ Features
 
-- **Basic Operations**: Addition (+), Subtraction (-), Multiplication (*), Division (/)
+### Basic Operations
+- **Arithmetic Operations**: Addition (+), Subtraction (−), Multiplication (×), Division (÷)
 - **Decimal Support**: Handle decimal numbers with precision
-- **Error Handling**: Displays "Error" for invalid calculations
-- **Clear Function**: Reset the calculator display with the 'C' button
-- **Responsive Design**: Clean, modern UI that works across different screen sizes
-- **Dark Theme**: Eye-friendly dark interface with orange operator highlights
+- **Error Handling**: Intelligent error detection with visual feedback
+- **Number Formatting**: Automatic formatting for large numbers and scientific notation
+
+### Advanced Functions
+- **Memory Operations**: Store, recall, add, and subtract from memory (MR, MC, M+, M-)
+- **Scientific Functions**: Square root (√), square (x²), reciprocal (1/x), percentage (%)
+- **Sign Toggle**: Change positive/negative values with (±)
+- **Backspace**: Delete the last entered digit (⌫)
+- **Clear Functions**: All Clear (AC) and Clear Entry (CE)
+
+### User Experience
+- **Full Keyboard Support**: Use your keyboard for all operations
+- **Calculation History**: View your recent calculations in real-time
+- **Memory Indicator**: Visual indicator when memory contains a value
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Accessibility**: WCAG compliant with proper focus states and ARIA labels
+- **Dark/Light Mode**: Automatic theme based on system preferences
+- **Smooth Animations**: Beautiful transitions and button feedback
 
 ## 🚀 Getting Started
 
@@ -42,62 +57,11 @@ No special requirements needed! Just a modern web browser.
 
 ```
 Calculator/
-├── index.html    # Main HTML structure
-├── index.css     # Styling and layout
-├── index.js      # Calculator functionality
-└── README.md     # This file
+├── index.html    # Enhanced HTML structure with semantic markup
+├── index.css     # Modern CSS with animations and responsive design
+├── index.js      # Advanced JavaScript with class-based architecture
+└── README.md     # This documentation
 ```
-
-## 🎮 Usage
-
-1. **Number Input**: Click on number buttons (0-9) to input numbers
-2. **Operations**: Click on operator buttons (+, -, *, /) to perform calculations
-3. **Decimal Point**: Use the '.' button for decimal numbers
-4. **Calculate**: Press '=' to execute the calculation
-5. **Clear**: Press 'C' to clear the display and start over
-
-## 💻 Technical Details
-
-### HTML (`index.html`)
-- Semantic structure with a calculator container
-- Input field for display (readonly)
-- Grid layout for calculator buttons
-- Event handlers attached via onclick attributes
-
-### CSS (`index.css`)
-- Flexbox layout for centering
-- CSS Grid for button arrangement (4-column layout)
-- Modern design with rounded corners and hover effects
-- Color scheme: Dark background with orange operator buttons
-
-### JavaScript (`index.js`)
-- `appendToDisplay()`: Adds numbers/operators to the display
-- `calculate()`: Evaluates mathematical expressions using `eval()`
-- `clearDisplay()`: Resets the calculator display
-- Error handling for invalid calculations
-
-## 🎨 Design Features
-
-- **Dark Theme**: Primary background color `hsl(0, 0%, 15%)`
-- **Orange Operators**: Highlighted operator buttons `hsl(38, 100%, 59%)`
-- **Rounded Design**: 15px border radius for modern appearance
-- **Large Display**: 5rem font size for easy readability
-- **Hover Effects**: Interactive button states for better UX
-
-## 🔧 Customization
-
-You can easily customize the calculator by modifying:
-
-- **Colors**: Update the HSL values in `index.css`
-- **Size**: Adjust button dimensions and font sizes
-- **Layout**: Modify the CSS Grid configuration
-- **Functionality**: Add more operations in `index.js`
-
-## 🚨 Known Limitations
-
-- Uses JavaScript's `eval()` function for calculations (consider replacing with a safer parser for production use)
-- No keyboard input support (only mouse/touch interactions)
-- Limited to basic arithmetic operations
 
 ## 🤝 Contributing
 
