@@ -69,19 +69,6 @@ Calculator/
 └── README.md     # This documentation
 ```
 
-## 🤝 Contributing
-
-Feel free to fork this project and submit pull requests for improvements such as:
-- Keyboard support
-- Additional mathematical functions
-- Scientific calculator features
-- Improved error handling
-- Theme customization options
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 **Enjoy calculating!** 🧮
